@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Аня Маркелова](https://up.htmlacademy.ru/htmlcss/31/user/1761107).
-* Наставник: [Анастасия Красавина] (https://htmlacademy.ru/profile/id186775).
+* Наставник: [Анастасия Красавина](https://htmlacademy.ru/profile/id186775).
 
 ---
 
