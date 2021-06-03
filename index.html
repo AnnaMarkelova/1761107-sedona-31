@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">`
         <link rel="icon" href="favicon.ico">
     </head>
-    <body>
-        <header>
-            <nav>
-            <a href="#"><img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" /></a>
-            <ul>
+    <body class="page-body">
+        <header class="main-header">
+            <nav class="main-navigation">
+            <a class="main-header-logo" href="#">
+                <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" />
+            </a>
+            <ul class="site-navigation details-list">
                 <li><a href="blank.html">Информация</a></li>
                 <li><a href="blank.html">Фото и видео</a></li>
                 <li><a href="blank.html">Карта штата</a></li>
@@ -17,70 +22,76 @@
             </ul>
             </nav>
         </header>
-        <main> 
+        <main class="container"> 
+            <div class="decoration">
+                <img src="img/welcome.svg" alt="Надписть welcome" /> <br>
+                <img src="img/thegorgeous.svg" alt="Надпистьthegorgeous" /> <br>
+                <img src="img/sedona.svg" alt="Надписть sedona" /> <br>
+                <img src="img/shape.svg" alt="Декоративный элемент" />
+            </div>
             <h1>Городок Седона </h1>
-            <p>Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
-            <section>
+            <p class="container--info">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+            <section class="details">
                 <h2>Подробности</h2>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!<p>
-                <ul>
-                    <li> 
+                <ul class="details-list">
+                    <li class="details-item details-item--invers"> 
                         <h3>Настоящий городок</h3>
                         <p>— №1 —</p>
                         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         <img src="img/town_sedona.jpg" width="800" height="256" alt="Фотография города" />
                     </li>
-                    <li>
+                    <li class="details-item">
                         <h3>Жилье</h3> 
                         <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         <img src="img/icon_home.png" width="72" height="72" alt="Иконка домика" />
                     </li>
-                    <li>
+                    <li class="details-item">
                         <h3>Еда</h3> 
                         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         <img src="img/icon_burger.png" width="72" height="72" alt="Иконка бургера" />
                     </li>
-                    <li>
+                    <li class="details-item">
                         <h3>Сувениры</h3> 
                         <p>Не только китайского, но и местного производства!</p>
                         <img src="img/icon_gift.png" width="72" height="72" alt="Иконка подарочной коробки" />
                     </li>
-                    <li> 
+                    <li class="details-item details-item--invers"> 
                         <h3>Там есть Мост дьявола</h3> 
                         <p>— №2 —</p>
                         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         <img src="img/bridgeofdevil.jpg" width="800" height="256" alt="Фотография моста Дьявола" />
                     </li>
-                    <li>
+                    <li class="details-item details-item--medium-color">
                         <h3>Небольшая площадь</h3>
                         <p>— №3 —</p>
                         <p>Все достопримечательности находятся очень близко</p>
                     </li>
-                    <li>
+                    <li class="details-item details-item--medium-color">
                         <h3>Красивая дорога</h3>
                         <p>— №4 —</p>
                         <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
                     </li>
-                    <li>
+                    <li class="details-item details-item--medium-color">
                         <h3>Мало туристов</h3>
                         <p>— №5 —</p>
                         <p>Большинство едет в гранд каньон и толпится там</p>
                     </li>
                 </ul>
             </section>
-            <section>
+            <section class="hotel-search">
                 <h2>Поиск гостиницы</h2>
-                <p>Заинтересовались?</p>
-                <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <a href="catalog.html">Поиск гостиницы в Cедоне</a>
-                <form action="https://echo.htmlacademy.ru" method="post">
+                <p class="hotel-search--question">Заинтересовались?</p>
+                <p class="hotel-search--details">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <a class="brown-style" href="catalog.html">Поиск гостиницы в Cедоне</a>
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                     <p>
                         <label for="appointment-chekintime">Дата заезда</label>
-                        <input id="appointment-chekintime" type="date" name="chekintime" /> 
+                        <input id="appointment-chekintime" type="date" name="chekintime" value="2017-04-24"/> 
                     </p>
                     <p>
                         <label for="appointment-chekouttime">Дата выезда</label>
-                        <input id="appointment-chekouttime" type="date" name="chekouttime" /> 
+                        <input id="appointment-chekouttime" type="date" name="chekouttime" value="2017-06-04"/> 
                     </p>
                     <p>
                         <label for="appointment-соunt_adult">Взрослые</label>
@@ -90,7 +101,7 @@
                         <label for="appointment-count_child">Дети</label>
                         <input id="appointment-count_child" type="number" name="count_child" />
                     </p>
-                    <button>Найти</button>
+                    <button class="button button-search blue-style">Найти</button>
                 </form>
             </section>
             <section>
@@ -98,27 +109,49 @@
                 <img src="img/map.png" width="1199" height="574" alt="Подложка под карту" />
             </section>
         </main>
-        <footer>
+        <footer class="main-footer">
             <h2>Контактная информация</h2>
-            <p>#visitSEDONA</p>
-            <p>Телефон:<a href="tel:+78005558628">+7 800 555-86-28</a></p>
-            <ul>
-                <li> 
+            <p class="main-footer--info">#visitSEDONA</p>
+            <p class="main-footer--info">Телефон:<a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
+            <ul class="details-list">
+                <li class="main-footer-item"> 
                     <h3>Ссылка на твитер</h3>
                     <a href="blank.html"><img src="img/twitter.png" width="17" height="17" alt="Логотип твитера" /></a>
                 </li>
-                <li> 
+                <li class="main-footer-item"> 
                     <h3>Ссылка на фейсбук</h3>
                     <a href="blank.html"><img src="img/facebook.png" width="12" height="22" alt="Логотип фейсбука" /></a>
                 </li>
-                <li> 
+                <li class="main-footer-item"> 
                     <h3>Ссылка на ютуб</h3>
                     <a href="blank.html"><img src="img/youtube.png" width="20" height="16" alt="Логотип ютуба" /></a>
                 </li>
             </ul>
             <div>
                 <p>Website by</p>
-                <img src="img/logo_htmlacademy.png" width="115" height="33" alt="Логотип html academy" />
+                <a class="main-footer--logo" href="https://htmlacademy.ru">
+                    <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M0 12.8806V15.4567H2.45789V12.8806H0Z"/>
+                        <path d="M11.6466 4.52965C10.0863 4.52965 8.82534 5.23807 8.03454 6.26851H7.94905V0H5.91864V15.4566H7.94905V10.1541C7.94905 8.02886 9.27418 6.50466 11.2191 6.50466C13.0572 6.50466 14.1258 7.87858 14.1258 9.72478V15.4566H16.1563V9.35984C16.1563 6.41878 14.3396 4.52965 11.6466 4.52965Z"/>
+                        <path d="M26.6171 4.8303H21.8082V1.07349H19.7778V4.8303H17.8542V6.80531H19.7778V12.7947C19.7778 14.5121 20.7396 15.4567 22.4708 15.4567H26.6171V13.4602H22.8769C22.193 13.4602 21.8082 13.0738 21.8082 12.4083V6.80531H26.6171V4.8303Z"/>
+                        <path d="M41.1215 4.55103C39.497 4.55103 38.2576 5.34532 37.5736 6.61191H37.5095C36.8897 5.3668 35.7356 4.55103 34.154 4.55103C32.7434 4.55103 31.6746 5.30238 31.0336 6.35431H30.948V4.83011H29.0031V15.4565H31.0336V10.0038C31.0336 8.00729 32.0806 6.54752 33.6624 6.50458C35.1584 6.46164 36.0347 7.53502 36.0347 9.14507V15.4565H38.0652V9.83203C38.0652 7.44915 39.4758 6.50458 40.6941 6.50458C42.1688 6.50458 43.0452 7.53502 43.0452 9.14507V15.4565H45.0754V8.9304C45.0754 6.35431 43.6221 4.55103 41.1215 4.55103Z" />
+                        <path d="M47.8271 12.7088C47.8271 14.4476 48.8103 15.4566 50.6269 15.4566H52.6359V13.4816H50.9261C50.2422 13.4816 49.8574 13.0952 49.8574 12.4297V0H47.8271V12.7088Z"/>
+                        <path d="M28.9048 19.7063H28.8192C28.027 18.6392 26.7425 17.8923 25.0295 17.8709C21.882 17.8282 19.6338 20.1544 19.6338 23.441C19.6338 26.749 21.9248 29.0752 25.008 29.0326C26.7637 29.0111 28.027 28.2215 28.8192 27.0903H28.9048V28.7336H30.9177V18.1697H28.9048V19.7063ZM25.3077 27.0691C23.081 27.0691 21.6679 25.4471 21.6679 23.441C21.6679 21.435 23.081 19.813 25.3077 19.813C27.4703 19.813 28.8836 21.435 28.8836 23.441C28.8836 25.4259 27.4703 27.0691 25.3077 27.0691Z" />
+                        <path d="M44.2095 22.0111C43.717 19.6208 41.5973 17.8708 38.8139 17.8708C35.4524 17.8708 33.2042 20.3251 33.2042 23.4409C33.2042 26.5567 35.4524 29.0325 38.8139 29.0325C41.5973 29.0325 43.717 27.2397 44.2095 24.8281H42.0898C41.6617 26.1727 40.3984 27.0903 38.8354 27.0903C36.6513 27.0903 35.2381 25.447 35.2381 23.4409C35.2381 21.4349 36.6513 19.8129 38.8354 19.8129C40.4625 19.8129 41.6617 20.7733 42.0898 22.0111H44.2095Z" />
+                        <path d="M55.0836 19.7063H54.998C54.2058 18.6392 52.921 17.8923 51.2081 17.8709C48.0607 17.8282 45.8125 20.1544 45.8125 23.441C45.8125 26.749 48.1036 29.0752 51.1866 29.0326C52.9425 29.0111 54.2058 28.2215 54.998 27.0903H55.0836V28.7336H57.0962V18.1697H55.0836V19.7063ZM51.4866 27.0691C49.2596 27.0691 47.8466 25.4471 47.8466 23.441C47.8466 21.435 49.2596 19.813 51.4866 19.813C53.6491 19.813 55.0622 21.435 55.0622 23.441C55.0622 25.4259 53.6491 27.0691 51.4866 27.0691Z" />
+                        <path d="M68.6538 19.813H68.5682C67.776 18.6819 66.4483 17.8923 64.7568 17.871C61.6738 17.8283 59.3827 20.1545 59.3827 23.4624C59.3827 26.749 61.6309 29.0753 64.7783 29.0326C66.4483 29.0111 67.776 28.2642 68.5468 27.1972H68.6538V28.7336H70.6665V13.3679H68.6538V19.813ZM65.0568 27.0904C62.8298 27.0904 61.4168 25.4685 61.4168 23.4624C61.4168 21.4563 62.8298 19.8343 65.0568 19.8343C67.2193 19.8343 68.6324 21.4776 68.6324 23.4624C68.6324 25.4685 67.2193 27.0904 65.0568 27.0904Z" />
+                        <path d="M78.3297 17.8708C75.0752 17.8708 72.8483 20.3678 72.8483 23.4623C72.8483 26.4714 74.9467 29.0325 78.3724 29.0325C80.8561 29.0325 82.8475 27.6879 83.5541 25.447H81.4342C80.9634 26.4502 79.8286 27.0903 78.4582 27.0903C76.5312 27.0903 75.1608 25.8098 75.0108 24.1666H83.7682C84.0464 20.6452 81.8412 17.8708 78.3297 17.8708ZM78.2868 19.8129C79.9783 19.8129 81.2416 20.8586 81.5627 22.3739H75.0538C75.3534 20.88 76.6168 19.8129 78.2868 19.8129Z" />
+                        <path d="M98.1985 17.8921C96.5713 17.8921 95.3295 18.6817 94.6443 19.9409H94.5799C93.9591 18.703 92.8029 17.8921 91.2184 17.8921C89.8054 17.8921 88.7347 18.639 88.0924 19.6848H88.0068V18.1695H86.0583V28.7334H88.0924V23.3128C88.0924 21.328 89.1417 19.8768 90.7261 19.8341C92.2247 19.7915 93.1028 20.8585 93.1028 22.4591V28.7334H95.1368V23.1421C95.1368 20.7732 96.5499 19.8341 97.7703 19.8341C99.2477 19.8341 100.125 20.8585 100.125 22.4591V28.7334H102.16V22.2457C102.16 19.6848 100.704 17.8921 98.1985 17.8921Z" />
+                        <path d="M109.441 27.0477L105.801 18.1697H103.553L108.392 29.7368L108.371 29.7794C108.028 30.6544 107.643 30.9745 106.701 30.9745H104.196V33.0019H106.701C108.542 33.0019 109.527 32.1696 110.212 30.3769L114.88 18.1697H112.803L109.441 27.0477Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="115" height="33.0294" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
             </div>
         </footer>
     </body>
