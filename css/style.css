@@ -228,9 +228,11 @@ img {
 .main-footer--logo svg {
     fill: var(--basic-black);    
 }
+
 .main-footer--logo:hover svg {
     fill: var(--blue-light);
 }
+
 .main-footer--logo:focus svg {
     fill: var(--grey);
 }
