@@ -8,23 +8,25 @@
         <link href="css/style.css" rel="stylesheet">
         <link rel="icon" href="favicon.ico">
     </head>
-    <body>
-        <header class="main-header">
+    <body class="page-body page-inner">
+        <header class="main-header container layout-positioner">
             <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
-                <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" />
-            </a>
-            <ul class="site-navigation list">
-                <li><a href="blank.html">Информация</a></li>
-                <li><a href="blank.html">Фото и видео</a></li>
-                <li><a href="blank.html">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
-            </ul>
+                <ul class="site-navigation list">
+                    <li><a href="blank.html">Информация</a></li>
+                    <li><a href="blank.html">Фото и видео</a></li>
+                    <li>
+                        <a class="main-header-logo" href="index.html">
+                            <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" />
+                        </a>
+                    </li>
+                    <li><a href="blank.html">Карта штата</a></li>
+                    <li><a href="catalog.html">Гостиницы</a></li>
+                </ul>
             </nav>
         </header>
-        <main >
-            <h1>Список гостиниц</h1>
-            <section class="section-filters"> 
+        <main class="container">
+            <h1>Поиск гостиниц</h1>
+            <section class="section-filters layout-positioner"> 
                 <h2>Фильтр гостиниц</h2>
                 <form class="form-filters" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
@@ -61,56 +63,60 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                        <legend>Стоимость в сутки, ₽:</legend>
-                        <p> 
-                            От 0
-                        </p>
-                        <p> 
-                            До 3000
-                        </p>
-                        <input type="range" name="Cost" id="volume-cost" min="0" max="3000"/>
-                        <label for="volume-cost">Volume</label>
-                    </fieldset>
-                    <button class="button button-filters" type="submit">Показать</button>
+                    <div>
+                        <fieldset>
+                            <legend>Стоимость в сутки, ₽:</legend>
+                            <p> 
+                                От 0
+                            </p>
+                            <p> 
+                                До 3000
+                            </p>
+                            <input type="range" name="Cost" id="volume-cost" min="0" max="3000"/>
+                            <label for="volume-cost">Volume</label>
+                        </fieldset>
+                        <button class="button button-filters" type="submit">Показать</button>
+                    </div>
                 </form>
             </section>
-            <section class="section-sorts">
-                <h2>Сортировка</h2>
-                <p class="section-sorts--tagline">Найдено: 3</p>
-                <p class="section-sorts">Сортировка:</p>
-                <ul class="list">
-                    <li>
-                        <button class="button button-sorttype" type="button">По цене</button>
-                    </li>
-                    <li>
-                        <button class="button button-sorttype" type="button">По типу</button>
-                    </li>
-                    <li>
-                        <button class="button button-sorttype" type="button">По рейтингу</button>
-                    </li>
-                </ul>
-            </section>
-            <section class="section-regulation">
-                <h2>Упорядочивание</h2>
-                <ul class="list" >
-                    <li>
-                        <button class="button button-regulation" type="button">
-                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.5 0L0 10H11L5.5 0Z"/>
-                            </svg>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="button button-regulation" type="button">
-                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.5 10L0 0H11"/>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-            </section>
-            <section class="section-catalog">
+            <div class="search-panel layout-positioner">
+                <section class="section-sorts">
+                    <h2>Сортировка</h2>
+                    <p class="section-sorts--tagline">Найдено: 3</p>
+                    <p class="section-sorts">Сортировка:</p>
+                    <ul class="list">
+                        <li>
+                            <button class="button button-sorttype" type="button">По цене</button>
+                        </li>
+                        <li>
+                            <button class="button button-sorttype" type="button">По типу</button>
+                        </li>
+                        <li>
+                            <button class="button button-sorttype" type="button">По рейтингу</button>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section-regulation">
+                    <h2>Упорядочивание</h2>
+                    <ul class="list" >
+                        <li>
+                            <button class="button button-regulation" type="button">
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 0L0 10H11L5.5 0Z"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button button-regulation" type="button">
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.5 10L0 0H11"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section class="section-catalog layout-positioner">
                 <h2>Список гостиниц</h2>
                 <ul class="list">
                     <li class="section-catalog-item">
@@ -170,25 +176,27 @@
                 </ul>
             </section>  
         </main>
-        <footer class="main-footer">
-            <h2>Контактная информация</h2>
-            <p class="main-footer--info">#visitSEDONA</p>
-            <p class="main-footer--info">Телефон:<a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
-            <ul class="list">
-                <li class="main-footer-item"> 
-                    <h3>Ссылка на твитер</h3>
-                    <a href="blank.html"><img src="img/twitter.png" width="17" height="17" alt="Логотип твитера" /></a>
-                </li>
-                <li class="main-footer-item"> 
-                    <h3>Ссылка на фейсбук</h3>
-                    <a href="blank.html"><img src="img/facebook.png" width="12" height="22" alt="Логотип фейсбука" /></a>
-                </li>
-                <li class="main-footer-item"> 
-                    <h3>Ссылка на ютуб</h3>
-                    <a href="blank.html"><img src="img/youtube.png" width="20" height="16" alt="Логотип ютуба" /></a>
-                </li>
-            </ul>
-            <div>
+        <footer class="main-footer container layout-positioner">
+                <div>
+                    <h2>Контактная информация</h2>
+                    <p class="main-footer--info">#visitSEDONA</p>
+                    <p class="main-footer--info">Телефон:<a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
+                </div>
+                <ul class="list">
+                    <li class="main-footer-item"> 
+                        <h3>Ссылка на твитер</h3>
+                        <a href="blank.html"><img src="img/twitter.png" width="17" height="17" alt="Логотип твитера" /></a>
+                    </li>
+                    <li class="main-footer-item"> 
+                        <h3>Ссылка на фейсбук</h3>
+                        <a href="blank.html"><img src="img/facebook.png" width="12" height="22" alt="Логотип фейсбука" /></a>
+                    </li>
+                    <li class="main-footer-item"> 
+                        <h3>Ссылка на ютуб</h3>
+                        <a href="blank.html"><img src="img/youtube.png" width="20" height="16" alt="Логотип ютуба" /></a>
+                    </li>
+                </ul>
+                <div>
                 <p>Website by</p>
                 <a class="main-footer--logo" href="https://htmlacademy.ru">
                     <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -212,8 +220,8 @@
                         </clipPath>
                         </defs>
                     </svg>
-                </a>
-            </div>
+                </a> 
+                </div>
         </footer>
     </body> 
 </html>
