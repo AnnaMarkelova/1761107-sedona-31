@@ -32,65 +32,65 @@
                         <img src="img/thegorgeous.svg" alt="Надпистьthegorgeous" />
                         <img src="img/sedona.svg" alt="Надписть sedona" />
                     </div>
-                    <img src="img/shape.svg" alt="Декоративный элемент" />
+                    <img class="description-decoration--shape" src="img/shape.svg" alt="Декоративный элемент" />
                 </div>
-                <h1>Городок Седона </h1>
+                <h1 class="visually-hidden">Городок Седона </h1>
                 <p class="description-info">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
-                <h2>Подробности</h2>
+                <h2 class="visually-hidden">Подробности</h2>
                 <p class="description-advantage">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!<p></p>
             </div>
             <section class="details">           
                 <ul class="details-list list ">
-                    <li class="details-item details-item--invers"> 
-                        <h3>Настоящий городок</h3>
+                    <li class="details-item details-item--invers details-item--plus"> 
+                        <h3>Настоящий <br> городок</h3>
                         <p>— №1 —</p>
-                        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                        <p>Седона — не аттракцион для туристов, там <br> течёт своя жизнь</p>
                     </li>
                     <li class="details-item details-item--img"> 
                         <img src="img/town_sedona.jpg" width="800" height="256" alt="Фотография города" />
                     </li>
-                    <li class="details-item">
+                    <li class="details-item details-item--ad">
                         <h3>Жилье</h3> 
-                        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                        <p>Рекомендуем пожить в настоящем <br> мотеле, всё как в кино!</p>
                         <img src="img/icon_home.png" width="72" height="72" alt="Иконка домика" />
                     </li>
-                    <li class="details-item">
+                    <li class="details-item details-item--ad">
                         <h3>Еда</h3> 
-                        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        <p>Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
                         <img src="img/icon_burger.png" width="72" height="72" alt="Иконка бургера" />
                     </li>
-                    <li class="details-item">
+                    <li class="details-item details-item--ad">
                         <h3>Сувениры</h3> 
-                        <p>Не только китайского, но и местного производства!</p>
+                        <p>Не только китайского, но и местного <br> производства!</p>
                         <img src="img/icon_gift.png" width="72" height="72" alt="Иконка подарочной коробки" />
                     </li>
                     <li class="details-item details-item--img"> 
                         <img src="img/bridgeofdevil.jpg" width="800" height="256" alt="Фотография моста Дьявола" />
                     </li>
-                    <li class="details-item details-item--invers"> 
-                        <h3>Там есть Мост дьявола</h3> 
+                    <li class="details-item details-item--invers details-item--plus"> 
+                        <h3>Там есть <br> Мост дьявола</h3> 
                         <p>— №2 —</p>
-                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                        <p>Да, по нему можно пройти! Если конечно <br> вы осмелитесь</p>
                     </li>
-                    <li class="details-item details-item--medium-color">
-                        <h3>Небольшая площадь</h3>
+                    <li class="details-item details-item--medium-color details-item--plus">
+                        <h3>Небольшая <br> площадь</h3>
                         <p>— №3 —</p>
-                        <p>Все достопримечательности находятся очень близко</p>
+                        <p>Все достопримечательности <br> находятся очень близко</p>
                     </li>
-                    <li class="details-item details-item--medium-color">
-                        <h3>Красивая дорога</h3>
+                    <li class="details-item details-item--medium-color details-item--plus">
+                        <h3>Красивая <br> дорога</h3>
                         <p>— №4 —</p>
-                        <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+                        <p>Ехать в седону из лас-вегаса совсем <br> не скучно!</p>
                     </li>
-                    <li class="details-item details-item--medium-color">
-                        <h3>Мало туристов</h3>
+                    <li class="details-item details-item--medium-color details-item--plus">
+                        <h3>Мало <br> туристов</h3>
                         <p>— №5 —</p>
-                        <p>Большинство едет в гранд каньон и толпится там</p>
+                        <p>Большинство едет в гранд каньон <br> и толпится там</p>
                     </li>
                 </ul>
             </section>
             <section class="hotel-search">
-                <h2>Поиск гостиницы</h2>
+                <h2 class="visually-hidden">Поиск гостиницы</h2>
                 <p class="hotel-search--question">Заинтересовались?</p>
                 <p class="hotel-search--details">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <button class="button button-search brown-style" >Поиск гостиницы в Cедоне</button>
@@ -98,30 +98,58 @@
                     <fieldset>
                         <p>
                             <label class="search-form--checkintime-label" for="appointment-chekintime">Дата заезда:</label>
-                            <input class="search-form--checkintime" id="appointment-chekintime" type="date" name="chekintime" value="2017-04-24"/> 
+                            <span class="datepicker search-form--checkintime">
+                                <input class="datepicker-control search-form--input" id="appointment-chekintime" type="text" name="chekintime" value="24 апреля 2017"/> 
+                                <svg class="datepicker-icon" tabindex="0" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"/>
+                                </svg>
+                            </span>        
                         </p>
                         <p>
                             <label class="search-form--checkouttime-label" for="appointment-chekouttime">Дата выезда:</label>
-                            <input class="search-form--checkouttime" id="appointment-chekouttime" type="date" name="chekouttime" value="2017-06-04"/> 
+                            <span class="datepicker search-form--checkouttime">
+                                <input class="datepicker-control search-form--input" id="appointment-chekouttime" type="text" name="chekouttime" value="4 июня 2017"/> 
+                                <svg class="datepicker-icon" tabindex="0" width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" />
+                                </svg>   
+                            </span>
                         </p>
                         <p>
                             <label class="search-form--adult-label" for="appointment-соunt_adult">Взрослые:</label>
-                            <input class="search-form--adult" id="appointment-соunt_adult" type="number" name="соunt_adult" />
+                            <span class="countpicker search-form--adult">
+                                <input class="countpicker-control search-form--input" id="appointment-соunt_adult" type="number" name="соunt_adult" value="2" />
+                                <svg class="countpicker-minus" tabindex="0" width="12" height="3" viewBox="0 0 12 3"  xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="12" height="3"/>
+                                </svg>
+                                <svg class="countpicker-plus" tabindex="0" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+                                </svg>
+                            </span>
                             <label class="search-form--child-label" for="appointment-count_child">Дети:</label>
-                            <input class="search-form--child" id="appointment-count_child" type="number" name="count_child" />
+                            <span class="countpicker search-form--child">
+                                <input class="countpicker-control search-form--input" id="appointment-count_child" type="number" name="count_child" value="0"/>
+                                <svg class="countpicker-minus" tabindex="0" width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="12" height="3" />
+                                </svg>
+                                <svg class="countpicker-plus" tabindex="0" width="11" height="11" viewBox="0 0 11 11"  xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+                                </svg>
+                            </span>
                         </p>
                     </fieldset>
                     <button class="button button-search blue-style">Найти</button>
                 </form>
             </section>
             <section>
-                <h2>Карта</h2>
+                <h2 class="visually-hidden">Карта</h2>
                 <img src="img/map.png" width="1199" height="574" alt="Подложка под карту" />
             </section>
         </main>
         <footer class="main-footer container">
                 <div>
-                    <h2>Контактная информация</h2>
+                    <h2 class="visually-hidden">Контактная информация</h2>
                     <p class="main-footer--info">#visitSEDONA</p>
                     <p class="main-footer--info"><a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
                 </div>
