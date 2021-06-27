@@ -9,6 +9,7 @@
     --grey-button: #cacaca;
     --grey-middle: #EBEBEB;
     --grey-dark: #333333;
+    --grey-toggle: #ABABAB;
     --brown: #766458;
     --brown-light: #766357;
     --brown-middle: #604E43;
@@ -21,6 +22,7 @@
     --beige-light: #E5E5E5;
     --beige-middle: #666666;
     --beige-dark: #A9A9A9;
+    --beige-checkbox: #6A6A6A;
     --none:  rgba(0,0,0,0);
 }
 
@@ -93,6 +95,23 @@ img {
     color: var(--basic-white-opacity);
 }
 
+.link-color-style {
+    color: var(--basic-black);
+}
+
+.link-color-style:hover {
+    color: var(--blue-light);
+}
+
+.link-color-style:focus {
+    color: var(--basic-black);
+    opacity: 30%;
+}
+
+.link-color-style:active {
+    color: var(--brown-light);
+}
+
 .list {
     list-style: none;
     padding: 0;
@@ -138,25 +157,12 @@ img {
     font-weight: 700;
 }
 
-.site-navigation a {
-    color: var(--basic-black);
-}
-
-.site-navigation a:hover {
-    color: var(--blue-light);
-}
-
-.site-navigation a:focus {
-    color: var(--basic-black);
-    opacity: 30%;
-}
-
-.site-navigation a:active {
-    color: var(--brown-light);
-}
-
 .logo-item {
     align-self: flex-start;
+}
+
+.page-inner .link-hotels {
+    color: var(--brown-light);
 }
 
 /* Description */
@@ -585,6 +591,8 @@ img {
     background-size: cover;
     color: var(--basic-white);
     line-height: 21px;
+    padding-top: 27px;
+    height: 217px;
 }
 
 .form-filters {
@@ -597,10 +605,141 @@ img {
     font-weight: 700;
 }
 
+.form-filters fieldset{
+    border: none;
+}
+
+.filter-infrastructure {
+    padding: 0;
+    margin: 0;
+}
+
+.filter-infrastructure legend {
+    margin-bottom: 24px;
+    margin-right: 145px;
+}
+
+.filter-item {
+    margin-bottom: 23px;
+}
+
+.filter-option-control {
+    position: relative;
+    cursor: pointer;
+    padding-left: 38px;
+}
+
+.checkbox-icon {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    fill: var(--basic-white);
+    cursor: pointer;
+}
+
+.filter-input-checkbox ~ .checkbox-icon-checked {
+    display: none;
+}
+
+.filter-input-checkbox ~ .checkbox-icon-unchecked {
+    display: block;
+}
+
+.filter-input-checkbox:checked ~ .checkbox-icon-checked {
+    display: block;
+}
+
+.filter-input-checkbox:checked ~ .checkbox-icon-unchecked {
+    display: none;
+}
+.filter-input-checkbox:disabled ~ svg {
+    fill: var(--beige-checkbox);
+}
+
+.filter-cost fieldset{
+    margin: 0;
+    padding: 0;
+}
+
+.range-filter {
+    margin-top: 10px;
+}
+
+.price-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 316px;
+    height: 36px;
+    border: 2px solid var(--basic-white);
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.price-controls input{
+   border: none;
+   background: none;
+   color: var(--basic-white);
+   width: 50px;
+}
+
+.price-controls .min-price {
+    border-right: 2px solid var(--basic-white);
+    padding-left: 60px;
+    padding-right: 24px;
+}
+
+.price-controls .max-price {
+    padding-left: 50px;
+    padding-right: 24px;
+}
+
+.range-controls {
+    position: relative;
+    margin-top: 20px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: var(--basic-white-opacity);
+}
+
+.range-controls .bar {
+    width: 78%;
+    height: 2px;
+    background: var(--basic-white);
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: -10px;
+    left: -1px;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 9px solid var(--basic-white);
+    background-color: var(--grey-toggle);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+    box-shadow: 0 2px 1px 0 var(--grey-toggle);
+    border: 10px solid var(--basic-white);
+}
+
+.range-controls .toggle-max {
+    left: 245px;
+}
+
 .button-filters {
+    display: block;
+    margin: 0 auto;
     border: 2px solid var(--basic-white);
     background-color: rgba(0,0,0,0);
     color: var(--basic-white);
+    margin-top: 33px;
+    width: 137px;
 }
 
 .button-filters:hover {
@@ -711,10 +850,6 @@ img {
     display: block;
 }
 
-.section-catalog-item p {
-    line-height: 21px;
-}
-
 .section-catalog-item-hotel {
     margin-left: 30px;
 }
@@ -732,7 +867,6 @@ img {
 
 .section-catalog-item-hotel a {
     color: var(--basic-white);
-    line-height: 21px;
     font-weight: 700;
 }
 
@@ -745,11 +879,13 @@ img {
     width: 110px;
     margin: 0;
     margin-right: 6px;
+    line-height: 21px;
 }
 
 .item-hotel-description--price {
     width: 142px;
     margin: 0;
+    line-height: 21px;
 }
 
 .item-hotel-actions {
@@ -760,6 +896,7 @@ img {
     width: 110px;
     height: 27px;
     margin-right: 6px;
+    text-align: center;
 }
 
 .item-hotel-actions button{
