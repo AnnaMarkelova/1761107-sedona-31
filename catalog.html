@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link rel="icon" href="favicon.ico">
@@ -11,16 +11,14 @@
     <body class="page-body page-inner">
         <header class="main-header container layout-positioner">
             <nav class="main-navigation">
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" />
+                </a>
                 <ul class="site-navigation list">
                     <li><a class="link-color-style" href="blank.html">Информация</a></li>
                     <li><a class="link-color-style" href="blank.html">Фото и видео</a></li>
-                    <li class="logo-item">
-                        <a class="main-header-logo" href="index.html">
-                            <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона" />
-                        </a>
-                    </li>
                     <li><a class="link-color-style" href="blank.html">Карта штата</a></li>
-                    <li><a class="link-color-style link-hotels" href="catalog.html">Гостиницы</a></li>
+                    <li><a class="link-color-style" href="catalog.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -35,10 +33,10 @@
                             <li class="filter-item">
                                 <label class="filter-option-control">Бассейн
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked />
-                                    <svg class="checkbox-icon checkbox-icon-unchecked" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-unchecked" tabindex="0" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" />
                                      </svg>
-                                    <svg class="checkbox-icon checkbox-icon-checked" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-checked" tabindex="0" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z"/>
                                         <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
                                     </svg>                                  
@@ -47,10 +45,10 @@
                             <li class="filter-item">
                                 <label class="filter-option-control">Парковка
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="filter-parking" />
-                                    <svg class="checkbox-icon checkbox-icon-unchecked" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-unchecked" tabindex="0" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" />
                                      </svg>
-                                    <svg class="checkbox-icon checkbox-icon-checked" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-checked" tabindex="0" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z"/>
                                         <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
                                     </svg>                                  
@@ -59,10 +57,10 @@
                             <li class="filter-item">
                                 <label class="filter-option-control">Wi-fi
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi" />
-                                    <svg class="checkbox-icon checkbox-icon-unchecked" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-unchecked" tabindex="0" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" />
                                      </svg>
-                                    <svg class="checkbox-icon checkbox-icon-checked" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-checked" tabindex="0" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z"/>
                                         <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
                                     </svg>                                  
@@ -76,10 +74,10 @@
                             <li class="filter-item">
                                 <label class="filter-option-control">Гостиница
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked />
-                                    <svg class="checkbox-icon checkbox-icon-unchecked" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-unchecked" tabindex="0" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" />
                                      </svg>
-                                    <svg class="checkbox-icon checkbox-icon-checked" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-checked" tabindex="0" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z"/>
                                         <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
                                     </svg>                                  
@@ -88,10 +86,10 @@
                             <li class="filter-item">
                                 <label class="filter-option-control">Мотель
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked />
-                                    <svg class="checkbox-icon checkbox-icon-unchecked" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-unchecked" tabindex="0" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" />
                                      </svg>
-                                    <svg class="checkbox-icon checkbox-icon-checked" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-checked" tabindex="0" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z"/>
                                         <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
                                     </svg>                                  
@@ -100,10 +98,10 @@
                             <li class="filter-item">
                                 <label class="filter-option-control">Апартаменты
                                     <input class="visually-hidden filter-input-checkbox" type="checkbox" name="appartment" id="filter-appartment" checked />
-                                    <svg class="checkbox-icon checkbox-icon-unchecked" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-unchecked" tabindex="0" width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" />
                                      </svg>
-                                    <svg class="checkbox-icon checkbox-icon-checked" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class="checkbox-icon checkbox-icon-checked" tabindex="0" width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.28499 7.48601L4.45599 10.315L12.239 18.098L26.171 4.16601L23.343 1.33701L12.239 12.439L7.28499 7.48601Z"/>
                                         <path d="M21 20C21 20.542 20.542 21 20 21H3C2.458 21 2 20.542 2 20V3C2 2.458 2.458 2 3 2H19.908L21.493 0.415C21.041 0.146542 20.5257 0.00329969 20 0H3C1.35 0 0 1.35 0 3V20C0 21.65 1.35 23 3 23H20C21.65 23 23 21.65 23 20V10.171L21 12.171V20Z" />
                                     </svg>                                  
@@ -127,8 +125,8 @@
                                     <div class="scale">
                                       <div class="bar"></div>
                                     </div>
-                                    <div class="toggle toggle-min"></div>
-                                    <div class="toggle toggle-max"></div>
+                                    <div class="toggle toggle-min" tabindex="0"></div>
+                                    <div class="toggle toggle-max" tabindex="0"></div>
                                   </div>
                             </div>
                         </fieldset>
