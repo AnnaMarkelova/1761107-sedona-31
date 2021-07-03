@@ -69,6 +69,7 @@ img {
     color: var(--basic-white);
     text-transform: uppercase;
     cursor: pointer;
+    padding: 0;
 }
 
 .brown-style {
@@ -204,7 +205,7 @@ img {
     text-align: center;
     margin: 0;
     margin-top: 43px;
-    margin-bottom: 48px;
+    margin-bottom: 42px;
 }
 
 .description-advantage {
@@ -239,6 +240,10 @@ img {
     flex-direction: column;
     align-items: center;
     padding-top: 77px;
+}
+
+.decoration--title img:first-child{
+    margin-bottom: 10px;
 }
 
 .decoration--title img:last-child{
@@ -356,7 +361,7 @@ img {
     line-height: 24px;
     color: var(--grey-dark);
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
 }
 
 .hotel-search--container {
@@ -442,7 +447,7 @@ img {
     width: 100%;
     border: none;
     padding: 0;
-    padding-left: 15px;
+    padding-left: 13px;
     padding-top: 10px;
     padding-bottom: 10px;
     box-sizing: border-box;
@@ -454,6 +459,7 @@ img {
     line-height: 26px;
     font-weight: 700;
     height: 38px;
+    text-transform: uppercase;
 }
 
 .search-form--input:hover {
@@ -492,8 +498,8 @@ img {
 .search-form--child-label{
     display: inline-block;
     text-align: left;
-    width: 57px;
-    margin-left: 53px;;
+    width: 61px;
+    margin-left: 49px;;
 }
 
 .search-form--child{
@@ -526,15 +532,15 @@ img {
 
 .countpicker-minus {
     position: absolute;
-    left: 10px;
-    top: 17px;
+    left: 13px;
+    top: 19px;
     cursor: pointer;
 }
 
 .countpicker-plus {
     position: absolute;
-    right: 10px;
-    top: 13px;
+    right: 14px;
+    top: 15px;
     cursor: pointer;
 }
 
@@ -647,7 +653,7 @@ img {
 .search-panel {
     display: grid;
     grid-template-columns: 1fr min-content;
-    min-height: 86px;
+    min-height: 87px;
     border-bottom: 1px solid var(--beige-light);
 }
 
@@ -661,7 +667,7 @@ img {
     color: var(--basic-white);
     line-height: 21px;
     padding-top: 27px;
-    min-height: 217px;
+    min-height: 216px;
 }
 
 .form-filters {
@@ -689,19 +695,19 @@ img {
 }
 
 .filter-item {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 
 .filter-option-control {
     position: relative;
     cursor: pointer;
-    padding-left: 38px;
+    padding-left: 40px;
 }
 
 .checkbox-icon {
     position: absolute;
     left: 0;
-    top: -2px;
+    top: -1px;
     fill: var(--basic-white);
     cursor: pointer;
 }
@@ -764,8 +770,8 @@ input::-webkit-inner-spin-button {
 
 .price-controls .min-price {
     border-right: 2px solid var(--basic-white);
-    padding-left: 60px;
-    padding-right: 24px;
+    padding-left: 62px;
+    padding-right: 18px;
 }
 
 .price-controls .max-price {
@@ -784,19 +790,19 @@ input::-webkit-inner-spin-button {
 }
 
 .range-controls .bar {
-    width: 78%;
+    width: 80%;
     height: 2px;
     background: var(--basic-white);
 }
 
 .range-controls .toggle {
     position: absolute;
-    top: -10px;
-    left: -1px;
+    top: -9px;
+    left: 0px;
     width: 4px;
-    height: 4px;
+    height: 3px;
     padding: 0;
-    border: 9px solid var(--basic-white);
+    border: 8px solid var(--basic-white);
     background-color: var(--grey-toggle);
     border-radius: 50%;
     cursor: pointer;
@@ -808,7 +814,7 @@ input::-webkit-inner-spin-button {
 }
 
 .range-controls .toggle-max {
-    left: 245px;
+    left: 252px;
 }
 
 .button-filters {
@@ -818,8 +824,8 @@ input::-webkit-inner-spin-button {
     background-color: rgba(0,0,0,0);
     color: var(--basic-white);
     margin-top: 33px;
-    width: 137px;
-    height: 32px;
+    width: 138px;
+    height: 36px;
 }
 
 .button-filters:hover {
@@ -895,6 +901,10 @@ input::-webkit-inner-spin-button {
 .section-regulation--items{
     display: flex;
     align-items: center;
+}
+
+.section-regulation--items li:first-child{
+    margin-right: 10px;
 }
 
 .button-regulation {
@@ -1012,5 +1022,5 @@ input::-webkit-inner-spin-button {
 
 .section-catalog-item--stars {
     text-align: right;
-    margin-bottom: 45px;
+    margin-bottom: 39px;
 }
