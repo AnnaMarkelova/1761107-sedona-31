@@ -1,11 +1,11 @@
-const SearchHotelButtom = document.querySelector(".button-search");
-const SearchHotelPopup = document.querySelector(".search-form");
-const SearchHotelEffects = document.querySelector(".search-form-effects");
-const SearchButtom = document.querySelector(".button-search-hotel");
-const SearchHotelCheckin = document.querySelector("#appointment-chekintime");
-const SearchHotelCheckout = document.querySelector("#appointment-chekouttime");
-const SearchHotelAdult = document.querySelector("#appointment-соunt_adult");
-const SearchHotelChild = document.querySelector("#appointment-count_child");
+const searchHotelButtom = document.querySelector(".button-search");
+const searchHotelPopup = document.querySelector(".search-form");
+const searchHotelEffects = document.querySelector(".search-form-effects");
+const searchButtom = document.querySelector(".button-search-hotel");
+const searchHotelCheckin = document.querySelector("#appointment-chekintime");
+const searchHotelCheckout = document.querySelector("#appointment-chekouttime");
+const searchHotelAdult = document.querySelector("#appointment-соunt_adult");
+const searchHotelChild = document.querySelector("#appointment-count_child");
 
 let isStorageSupport = true;
 let storage = "";
@@ -16,44 +16,44 @@ try {
   isStorageSupport = false;
 }
 
-SearchHotelButtom.addEventListener("click", function(evt) {
+searchHotelButtom.addEventListener("click", function(evt) {
     evt.preventDefault();
 
-    if (SearchHotelPopup.classList.contains("visually-hidden")) {
-        SearchHotelPopup.classList.remove("visually-hidden");
-        SearchHotelPopup.classList.add("search-form-effects"); 
+    if (searchHotelPopup.classList.contains("visually-hidden")) {
+        searchHotelPopup.classList.remove("visually-hidden");
+        searchHotelPopup.classList.add("search-form-effects"); 
       } else {
-        SearchHotelPopup.classList.add("visually-hidden");
-        SearchHotelPopup.classList.remove("search-form-effects");
+        searchHotelPopup.classList.add("visually-hidden");
+        searchHotelPopup.classList.remove("search-form-effects");
       }
 
     if (storage) {
-        SearchHotelAdult.value = storage;
+        searchHotelAdult.value = storage;
       }
     
-    SearchHotelPopup.classList.remove("modal-error");
+    searchHotelPopup.classList.remove("modal-error");
 })
 
-SearchHotelPopup.addEventListener("submit", function(evt) {
-    if (!SearchHotelCheckin.value || !SearchHotelCheckout.value || !SearchHotelAdult.value || !SearchHotelChild.value) {
+searchHotelPopup.addEventListener("submit", function(evt) {
+    if (!searchHotelCheckin.value || !searchHotelCheckout.value || !searchHotelAdult.value || !searchHotelChild.value) {
         evt.preventDefault();
-        SearchHotelPopup.classList.remove("search-form-effects");
-        SearchHotelPopup.classList.add("modal-error");
+        searchHotelPopup.classList.remove("search-form-effects");
+        searchHotelPopup.classList.add("modal-error");
     } else {
         if (isStorageSupport) {
-            localStorage.setItem("Adult", SearchHotelAdult.value);
-            localStorage.setItem("Child", SearchHotelChild.value);
+            localStorage.setItem("Adult", searchHotelAdult.value);
+            localStorage.setItem("Child", searchHotelChild.value);
         }  
     }
 })
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if (!SearchHotelPopup.classList.contains("visually-hidden")) {
+      if (!searchHotelPopup.classList.contains("visually-hidden")) {
         evt.preventDefault();
-        SearchHotelPopup.classList.add("visually-hidden");
-        SearchHotelPopup.classList.remove("search-form-effects");
-        SearchHotelPopup.classList.remove("modal-error");
+        searchHotelPopup.classList.add("visually-hidden");
+        searchHotelPopup.classList.remove("search-form-effects");
+        searchHotelPopup.classList.remove("modal-error");
       } 
     }
   });
