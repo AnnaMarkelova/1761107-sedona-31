@@ -5,7 +5,7 @@
         <title>HTML Academy: Седона</title>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
         <link rel="icon" href="favicon.ico">
     </head>
     <body class="page-body main-page">
@@ -26,11 +26,11 @@
             <div class="description">
                 <div class="description-decoration">
                     <div class="decoration--title">
-                        <img src="img/welcome.svg" alt="Надписть welcome" />
-                        <img src="img/thegorgeous.svg" alt="Надпистьthegorgeous" />
-                        <img src="img/sedona.svg" alt="Надписть sedona" />
+                        <img src="img/welcome.svg" width="189" height="46" alt="Надписть welcome" />
+                        <img src="img/thegorgeous.svg" width="256" height="29" alt="Надпистьthegorgeous" />
+                        <img src="img/sedona.svg" width="458" height="214" alt="Надписть sedona" />
                     </div>
-                    <img class="description-decoration--shape" src="img/shape.svg" alt="Декоративный элемент" />
+                    <img class="description-decoration--shape" width="1200" height="57" src="img/shape.svg" alt="Декоративный элемент" />
                 </div>
                 <h1 class="visually-hidden">Городок Седона </h1>
                 <p class="description-info">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
@@ -93,7 +93,7 @@
                 <p class="hotel-search--details">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <div class="hotel-search--container">
                     <button class="button button-search brown-style" >Поиск гостиницы в Cедоне</button>
-                    <form class="search-form" action="catalog.html" method="post">
+                    <form class="search-form search-form-effects" action="catalog.html" method="post">
                         <fieldset>
                             <p>
                                 <label class="search-form--checkintime-label" for="appointment-chekintime">Дата заезда:</label>
@@ -138,13 +138,13 @@
                                 </span>
                             </p>
                         </fieldset>
-                        <button class="button button-search blue-style">Найти</button>
+                        <button class="button button-search button-search-hotel blue-style">Найти</button>
                     </form>  
                 </div>
             </section>
             <section>
                 <h2 class="visually-hidden">Карта</h2>
-                <img class="map" src="img/map.png" width="1199" height="574" alt="Подложка под карту" />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474797.35719484556!2d-111.80804077819792!3d34.75449068299674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1626095490209!5m2!1sen!2sru" width="1199" height="547" style="border:0;" allowfullscreen="" loading="lazy" title="Карта Седона"></iframe>
             </section>
         </main>
         <footer class="main-footer container layout-positioner">
@@ -191,5 +191,6 @@
                     </a> 
                 </div>
         </footer>
+        <script src="js/hotel-search.js"></script>
     </body>
 </html>
